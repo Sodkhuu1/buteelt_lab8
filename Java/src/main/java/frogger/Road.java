@@ -6,6 +6,7 @@ package frogger;
  * @author Zishen Wen (F22), Deyuan Chen (S22)
  */
 public class Road {
+
     private final boolean[] occupied;
 
     public Road(boolean[] occupied) {
@@ -15,4 +16,13 @@ public class Road {
     public boolean[] getOccupied() {
         return this.occupied;
     }
+    //Nemsen heseg
+    public boolean isOccupied(int position) {
+        return occupied[position];
+    }
+    
+    public boolean isValidPosition(int position) {
+        return position >= 0 && position < occupied.length;
+    }
+    
 }

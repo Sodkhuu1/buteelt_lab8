@@ -26,7 +26,7 @@ public class Records {
      * @param gender      gender of the frogger
      * @return Return false if the record has existed. Else, return true.
      */
-    public boolean addRecord(String firstName, String lastName, String phoneNumber,
+    /*public boolean addRecord(String firstName, String lastName, String phoneNumber,
                              String zipCode, String state, String gender) {
         for (String[] row : this.records) {
             if (row[0].equals(firstName)
@@ -41,5 +41,10 @@ public class Records {
         this.records.add(
                 new String[]{firstName, lastName, phoneNumber, zipCode, state, gender});
         return true;
+    }*/
+    public boolean addRecord(FroggerID froggerID) {
+        // getter-үүдээр дамжуулан өгөгдлөө авна.
+        return true;
     }
+    
 }
